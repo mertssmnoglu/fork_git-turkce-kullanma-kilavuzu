@@ -4,11 +4,15 @@
 
 Merhaba. Bu repo'da Git ve GitHub'ı dilim döndüğünce ve basit bir şekilde anlatmaya çalışacağım. Lütfen eksik ya da hatalı gördüğünüz konular için PR açmaktan çekinmeyin. :)
 
+## İçerikler
+
 - [**Git Türkçe Kullanma Kılavuzu İçindekiler**](#git-t%C3%BCrk%C3%A7e-kullanma-k%C4%B1lavuzu)
   - [Git Nedir?](#git-nedir)
   - [Neden Git Kullanırız?](#neden-git-kullanırız)
   - [Git Buysa, GitHub Ne?](#git-buysa-github-ne)
   - [Temel Git Başlıkları ve Git Komutları](#temel-git-başlıkları-ve-git-komutları)
+  - [Git Commit Desenleri](#git-commit-desenleri)
+    - [Geleneksel (Conventional) Commit Mesajları](#geleneksel-conventional-commit-mesajları)
 
 ## Git Nedir?
 
