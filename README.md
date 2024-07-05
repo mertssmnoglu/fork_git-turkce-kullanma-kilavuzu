@@ -73,24 +73,76 @@ Commit mesajında tip seçimi zorunludur ve sadece 1 adet tip seçilmelidir. Kap
 
 Aşağıdaki başlıklarda, commit mesajlarında kullanılan tiplere ve açıklamalara yer verilmiştir.
 
-1. **test**: herhangi bir test kodu oluşturma veya değiştirme işlemini gösterir.
+#### test
+
+Herhangi bir test kodu oluşturma veya değiştirme işlemini gösterir.
+
 Örnek: Birim testlerinin oluşturulması.
-2. **feat**: projeye yeni bir özellik geliştirildiğini gösterir.
+
+#### feat
+
+Projeye yeni bir özellik geliştirildiğini gösterir.
+
 Örnek: Bir hizmet, işlevsellik, uç nokta vb. eklenmesi.
-3. **refactor**: sistem mantığı/kurallarını etkilemeyen kod yeniden düzenlemesi olduğunda kullanılır.
+
+#### refactor
+
+Sistem mantığı/kurallarını etkilemeyen kod yeniden düzenlemesi olduğunda kullanılır.
+
 Örnek: Kod incelemesinden sonra kod değişiklikleri.
-4. **style**: kod biçimlendirme ve stili değiştiğinde ve sistemi herhangi bir şekilde değiştirmediğinde kullanılır.
+
+#### style
+
+Kod biçimlendirme ve stili değiştiğinde ve sistemi herhangi bir şekilde değiştirmediğinde kullanılır.
+
 Örnek: Stil kılavuzunu değiştirme, lint kuralını değiştirme, girintileri düzeltme, beyaz boşlukları kaldırma, yorumları kaldırma vb.
-5. **fix**: sistemi hatalar oluşturan hataları düzeltmek için kullanılır.
+
+#### fix
+
+Sistemi hatalar oluşturan hataları düzeltmek için kullanılır.
+
 Örnek: Beklendiği gibi davranmayan ve hata döndüren bir işlev için bir işleme uygulama.
-6. **chore**: sistemi veya test dosyalarını etkilemeyen proje değişikliklerini gösterir. Bunlar geliştirme değişiklikleridir.
+
+#### chore
+
+Sistemi veya test dosyalarını etkilemeyen proje değişikliklerini gösterir. Bunlar geliştirme değişiklikleridir.
+
 Örnek: eslint kurallarını değiştirme, prettier ekleme, .gitignore'a daha fazla dosya uzantısı ekleme
-7. **docs**: projedeki belgelerde değişiklik olduğunda kullanılır.
+
+#### docs
+
+Projedeki belgelerde değişiklik olduğunda kullanılır.
+
 Örnek: API belgelerine bilgi ekleme, README'yi değiştirme vb.
-8. **build**: projenin yapım sürecini veya harici bağımlılıklarını etkileyen değişiklikleri göstermek için kullanılır.
+
+#### build
+
+Projenin yapım sürecini veya harici bağımlılıklarını etkileyen değişiklikleri göstermek için kullanılır.
+
 Örnek: Gulp, npm bağımlılıklarını ekleme/kaldırma vb.
-9. **perf**: sistem performansını artıran bir değişikliği gösterir.
-Örnek: ForEach'ü While ile değiştirme vb.
-10. **ci**: CI yapılandırma dosyalarında değişiklikler için kullanılır.
+
+#### perf
+
+Sistem performansını artıran bir değişikliği gösterir.
+
+Örnek: ForEach'i While ile değiştirme vb.
+
+#### ci
+
+CI yapılandırma dosyalarında değişiklikler için kullanılır.
+
 Örnek: Circle, Travis, BrowserStack vb.
-11. **revert**: önceki bir işlemi geri almaya işaret eder.
+
+#### revert
+
+Yanlışlıkla yapılan veya artık istenmeyen bir işlemi geri almaya işaret eder.
+
+Örnek: Yanlışlıkla kabul edilen bir Pull Request'i geri alma.
+
+---
+
+> [!TIP]
+> Eğer hangi tipi kullanacağınızı bilmiyorsanız, bu commit'i iki veya daha fazla commit'e bölmek mümkündür
+
+> [!NOTE]
+> **Build** ve **Chore** arasındaki fark oldukça az olabilir ve karışıklığa neden olabilir, bu nedenle doğru tipin farkında olunmalıdır. Örneğin Node.js için, belirli bir geliştirme bağımlılığı devDependencies'de varsa, **chore** kullanılabilir. Projede yaygın bağımlılıkların değişikliklerinde/eklemelerinde ve sisteme doğrudan gerçek bir etkisi olanlarda ise **build** kullanılabilir.
